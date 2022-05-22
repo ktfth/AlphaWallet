@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CSNjobGqSWRTMwR/nbD+yMQYAUkX5O04WCp1FrjPe2g=",
+  "Source": "AlphaWallet",
+  "BasePath": "_content/AlphaWallet",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
