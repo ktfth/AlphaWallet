@@ -25,3 +25,6 @@
 /home/kaique/war/AlphaWallet/obj/Debug/net6.0/AlphaWallet.pdb
 /home/kaique/war/AlphaWallet/obj/Debug/net6.0/AlphaWallet.genruntimeconfig.cache
 /home/kaique/war/AlphaWallet/obj/Debug/net6.0/ref/AlphaWallet.dll
+/home/kaique/war/AlphaWallet/bin/Debug/net6.0/NBitcoin.dll
+/home/kaique/war/AlphaWallet/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/kaique/war/AlphaWallet/bin/Debug/net6.0/QBitNinja.Client.dll
