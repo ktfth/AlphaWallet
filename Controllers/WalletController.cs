@@ -28,4 +28,19 @@ public class WalletController : ControllerBase
             Address = address.ToString(),
         };
     }
+
+    [HttpPost(Name = "PostWalletMnemonic")]
+    public WalletMnemonic Post([FromBody] WalletMnemonicRequest body)
+    {
+        var network = Network.TestNet;
+        Mnemonic mnemo = new Mnemonic(Wordlist.English, WordCount.Twelve);
+        ExtKey hdRoot = mnemo.DeriveExtKey(body.Password);
+        var address = hdRoot.PrivateKey.PubKey.GetAddress(ScriptPubKeyType.Legacy, network);
+
+        return new WalletMnemonic()
+        {
+            Address = address.ToString(),
+            Mnemonic = mnemo.ToString()
+        };
+    }
 }
