@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/kaique/war/AlphaWallet/AlphaWallet.csproj": {}
+    "C:\\Users\\kaeyo\\source\\repos\\AlphaWallet\\AlphaWallet.csproj": {}
   },
   "projects": {
-    "/home/kaique/war/AlphaWallet/AlphaWallet.csproj": {
+    "C:\\Users\\kaeyo\\source\\repos\\AlphaWallet\\AlphaWallet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kaique/war/AlphaWallet/AlphaWallet.csproj",
+        "projectUniqueName": "C:\\Users\\kaeyo\\source\\repos\\AlphaWallet\\AlphaWallet.csproj",
         "projectName": "AlphaWallet",
-        "projectPath": "/home/kaique/war/AlphaWallet/AlphaWallet.csproj",
-        "packagesPath": "/home/kaique/.nuget/packages/",
-        "outputPath": "/home/kaique/war/AlphaWallet/obj/",
+        "projectPath": "C:\\Users\\kaeyo\\source\\repos\\AlphaWallet\\AlphaWallet.csproj",
+        "packagesPath": "C:\\Users\\kaeyo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaeyo\\source\\repos\\AlphaWallet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kaique/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\kaeyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -21,7 +21,7 @@ public class TransactionController : ControllerBase
     [HttpPost(Name = "PostTransaction")]
     public Transaction Post([FromBody] TransactionRequest body)
     {
-        var bitcoinPrivateKey = new BitcoinSecret(body.PrivateKey, Network.TestNet);
+        var bitcoinPrivateKey = new BitcoinSecret(body.PrivateKey, Network.Main);
         var network = bitcoinPrivateKey.Network;
         var address = bitcoinPrivateKey.GetAddress(ScriptPubKeyType.Legacy);
 

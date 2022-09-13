@@ -18,7 +18,7 @@ public class BalanceController : ControllerBase
     [HttpPost(Name = "PostBalance")]
     public WalletBalance Post([FromBody] WalletBalanceRequest body)
     {
-        var bitcoinPrivateKey = new BitcoinSecret(body.PrivateKey, Network.TestNet);
+        var bitcoinPrivateKey = new BitcoinSecret(body.PrivateKey, Network.Main);
         var network = bitcoinPrivateKey.Network;
         var address = bitcoinPrivateKey.GetAddress(ScriptPubKeyType.Legacy);
 

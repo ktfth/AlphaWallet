@@ -17,7 +17,7 @@ public class WalletController : ControllerBase
     [HttpGet(Name = "GetWallet")]
     public Wallet Get()
     {
-        var network = Network.TestNet;
+        var network = Network.Main;
 
         var privateKey = new Key();
         var bitcoinPrivateKey = privateKey.GetWif(network);
@@ -32,7 +32,7 @@ public class WalletController : ControllerBase
     [HttpPost(Name = "PostWalletMnemonic")]
     public WalletMnemonic Post([FromBody] WalletMnemonicRequest body)
     {
-        var network = Network.TestNet;
+        var network = Network.Main;
         Mnemonic mnemo = new Mnemonic(Wordlist.English, WordCount.Twelve);
         ExtKey hdRoot = mnemo.DeriveExtKey(body.Password);
         var address = hdRoot.PrivateKey.PubKey.GetAddress(ScriptPubKeyType.Legacy, network);
