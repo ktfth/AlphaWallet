@@ -39,6 +39,7 @@ public class WalletController : ControllerBase
 
         return new WalletMnemonic()
         {
+            PrivateKey = hdRoot.PrivateKey.GetWif(network).ToString(),
             Address = address.ToString(),
             Mnemonic = mnemo.ToString()
         };
